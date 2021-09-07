@@ -1,40 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Stats preview card component</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathématiques | Sommaire</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="preview-card">
-    <div class="card-content">
-      <h1 class="title">Get insights that help your business grow.</h1>
-
-      <p class="description">
-        Discover the benefits of data analytics and make better decisions regarding revenue, customer
-        experience, and overall efficiency.
-      </p>
-      <ul class="stats">
-        <li>
-          <div class="number">10k+</div>
-          <div class="legend">companies</div> </li>
-        <li>
-          <div class="number">314</div>
-          <div class="legend">templates</div> </li>
-        <li>
-          <div class="number">12m+</div>
-          <div class="legend">queries</div> </li>
-      </ul>
+    <header>
+        <h1 class="title">Cours</h1>
+        <nav>
+            <ul>
+                <li class="matiere">
+                    <h3 class="matiere-name"><a href="maths/math.html">Mathématiques</a></h3>
+                    <ul>
+                        <li class="chapter"><a href="maths/nombres-calculs.html">Nombres Calculs</a></li>
+                        <li class="chapter"><a href="">Repères</a></li>
+                        <li class="chapter"><a href="">Intervalles</a></li>
+                        <li class="chapter"><a href="">Fonctions</a></li>
+                        <li class="chapter"><a href="">équations</a></li>
+                        <li class="chapter"><a href="">Fonctions Ref</a></li>
+                        <li class="chapter"><a href="">Vecteurs</a></li>
+                        <li class="chapter"><a href="">Résolution Graphique</a></li>
+                        <li class="chapter"><a href="">Probabilités</a></li>
+                        <li class="chapter"><a href="">Sens variation</a></li>
+                        <li class="chapter"><a href="">Pourcentage évolution</a></li>
+                        <li class="chapter"><a href="">Fonction Affine</a></li>
+                        <li class="chapter"><a href="">Signe Fonction</a></li>
+                        <li class="chapter"><a href="">Vecteur X Réel</a></li>
+                        <li class="chapter"><a href="">équation droite</a></li>
+                    </ul>
+                </li>
+                <li class="matiere">
+                    <h3 class="matiere-name"><a href="/">Français</a></h3>
+                    <ul>
+                        <li class="chapter"><a href="">Commentaire composé</a></li>
+                    </ul>
+                </li>
+                <li class="matiere">
+                    <h3 class="matiere-name"><a href="/">Histoire</a></h3>
+                    <ul>
+                        <li class="chapter"><a href="">L'ouverture Atlantique</a></li>
+                    </ul>
+                </li>
+                <li class="matiere">
+                    <h3 class="matiere-name"><a href="/">Géographie</a></h3>
+                    <ul>
+                        <li class="chapter"><a href="">Urbanisation</a></li>
+                    </ul>
+                </li>
+                <li class="matiere">
+                    <h3 class="matiere-name"><a href="/">Physique Chimie</a></h3>
+                    <ul>
+                        <li class="chapter"><a href="">Transformations Chimiques</a></li>
+                    </ul>
+                </li>
+                <li class="matiere">
+                    <h3 class="matiere-name"><a href="/">S.E.S</a></h3>
+                    <ul>
+                        <li class="chapter"><a href="">Les marchés</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="body">
+        <div class="summary">
+            <h2 class="summary-title">Sommaire</h2>
+            <ul class="summary-content">
+                <li class="summary-chapter"><a href="">1 - Nombres et Calculs</a></li>
+                <li class="summary-chapter"><a href="">2 - Repérage dans le Plan</a></li>
+                <li class="summary-chapter"><a href="">3 - Intervalles et Inégalités</a></li>
+                <li class="summary-chapter"><a href="">4 - Généralités Fonctions</a></li>
+                <li class="summary-chapter"><a href="">5 - Identités remarquables / équations</a></li>
+                <li class="summary-chapter"><a href="">6 - Fonctions de Référence</a></li>
+            </ul>
+        </div>
+        <div class="content"></div>
     </div>
-    <img class="img" src="images/image-header-desktop.jpg" alt="">
-  </div>
-  
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Lounès</a>.
-  </div>
+    <script src="../app.js" type="text/javascript"></script>
 </body>
 </html>

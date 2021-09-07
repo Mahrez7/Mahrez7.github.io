@@ -1,137 +1,221 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@100;200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Stick&family=Ubuntu:wght@300;400;500&family=Viaoda+Libre&display=swap');
 
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
+    font-family: Ubuntu, sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    min-height: 60vh;
+    position: relative;
+}
+
+header{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    background-color: hsl(233, 47%, 7%);
-    padding-top: 100px;
-
-}
-
-.preview-card{
-    margin-top: 30px;
-    display: flex;
-    background-color: hsl(277, 64%, 61%);
-    border-radius: 8px;
-    width: 900px;
-    height: 400px;
-    color: hsl(0, 0%, 100%);
-}
-
-.card-content{
-    background-color: hsl(244, 38%, 16%);
-    padding: 50px;
-    display: flex;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    flex-direction: column;
     justify-content: space-between;
+    background-color: #09f;
+    height: 15vh;
 }
 
 .title{
-    display: flex;
-    justify-content: flex-start;
-    font-family: Inter;
+    margin: 0 30px;
+    font-family: Stick, Ubuntu, sans-serif;
+    font-size: 2em;
+    color: red;
 }
 
-.purple{
+header nav{
+    height: 100%;
+    width: 100%;
+    font-family: Montserrat, Ubuntu, sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
     display: flex;
-    margin: 0 8px;
-    color: hsl(277, 64%, 61%);
 }
 
-.description{
-    font-family: Inter;
-    font-size: 0.8em;
-    font-weight: 100;
-    color: hsla(0, 0%, 100%, 0.75);
-}
-
-ul{
-    list-style: none;
+header ul{
+    height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    list-style: none;
+    background-color: #09f;
+    position: relative;
 }
 
-ul li{
+header ul li{
+    display: flex;
+    flex-direction: column;
+}
+
+.matiere{
+    height: 100%;
+    width: 16.67%;
+}
+
+.matiere-name{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 1em;
+    text-transform: capitalize;
+    padding: 15px;
+}
+
+.matiere ul{
+    display: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.matiere:hover ul{
+    width: 16.67%;
+    height: auto;
+    position: absolute;
+    top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #09f;
+}
+
+.chapter{
+    padding-left: 8px;
+    display: flex;
+    height: 12vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.chapter:hover, .matiere-name:hover{
+    background-color: rgb(4, 101, 165);
+}
+
+
+.body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 20px;
 }
 
-li .number{
-    font-family: Inter;
-    font-size: 1.3em;
-    font-weight: 700;
+.summary{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border-radius: 25px;
+    border: 2px solid #09f;
+    margin-bottom: 5vh;
 }
 
-li .legend{
-    text-transform: uppercase;
-    font-family: Inter;
-    font-size: 0.7em;
-    font-weight: 100;
-    color: hsla(0, 0%, 100%, 0.6);
+.summary-title{
+    width: 100%;
+    background-color: #09f;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    text-align: center;
 }
 
-.img{
+.summary-content{
+    padding: 30px;
+    font-size: .7em;
     height: 100%;
-    background-size: cover;
-    background-image: url(images/image-header-desktop.jpg);
-    opacity:0.7;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+    list-style: circle;
+    text-transform: capitalize;
 }
 
+.summary-chapter{
+    font-family: Montserrat, Roboto, 'Segoe UI', sans-serif;
+    margin: 20px 0px;
+    transition: all 300ms ease;
+}
 
-@media screen and (max-width : 500px){
-    *{
-        border-radius: none;
-    }
+.summary-chapter:hover{
+    padding-left: 15px;
+}
 
-    .preview-card{
-        flex-direction: column-reverse;
-        width: 70%;
-        height: auto;
-    }
+.content{
+    width: 50%;
+    list-style: none;
+    justify-content: space-around;
+}
 
-    .img{
-        width: 100%;
-        background-image: url(images/image-header-mobile.jpg);
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-    }
+.part{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-weight: 200;
+}
 
-    ul{
-        flex-direction: column;
-        justify-content: space-around;
-    }
+.part-name{
+    font-family: 'Viaoda Libre', Montserrat, Roboto, sans-serif;
+    font-size: 1.25em;
+    text-decoration: underline;
+    color: rgb(0, 105, 0);
+}
 
-    .title{
-        text-align: center;
-        padding: 10px;
-    }
+.part ul{
+    padding: 20px 0px;
+    list-style: disc;
+}
 
-    .card-content{
-        border-top-right-radius: 0;
-        border-top-left-radius: 0;
-        border-bottom-right-radius: 8px;
-        border-bottom-left-radius: 8px;
-    }
+.part ul li{
+    margin: 10px 0px;
+}
 
-    .description{
-        margin: 20px;
-    }
+.part li ul{
+    list-style-type: circle;
+}
 
-    li{
-        margin: 15px;
-    }
+img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.ensemble-name{
+    font-weight: 400;
+}
+
+h6{
+    font-size: .9em;
+    font-weight: 400;
+}
+
+sup, sub{
+    font-size: .55em;
+}
+
+button{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 35px;
+    height: 35px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-color: #09f;
+    font-size: 1em;
+    opacity: .8;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 1;
 }
